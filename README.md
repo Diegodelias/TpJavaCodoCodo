@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=hs6RKQ7unTI
+link video tp: https://www.youtube.com/watch?v=hs6RKQ7unTI
 
 Proyecto final
 Grupos separados: Comisión 23544

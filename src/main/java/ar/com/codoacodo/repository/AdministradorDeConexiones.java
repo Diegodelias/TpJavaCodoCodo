@@ -7,13 +7,14 @@ public class AdministradorDeConexiones {
 		public static Connection getConnection() {
 			String username = "root";
 			String password = "123456";
-			String port = "33060";
+			String port = "3306";
 			String host = "localhost";
-			String dbName = "";
+			String dbName = "oradores";
 			
 			String driverName = "com.mysql.cj.jdbc.Driver";
 			
-			String dbUrl = "jdbc:mysql://"+host+":"+port+"/"+dbName + "?serverTimeZone=UTC&useSSL=false";
+			String dbUrl = "jdbc:mysql://"+host+":"+port+"/"+dbName + "?allowPublicKeyRetrieval=true&serverTimeZone=UTC&useSSL=false";
+			
 				
 		
 			try {

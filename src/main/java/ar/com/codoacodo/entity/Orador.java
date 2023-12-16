@@ -1,9 +1,10 @@
 package ar.com.codoacodo.entity;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
-import lombok.Data;
 
-@Data
+
+
 public class Orador {
 	
 
@@ -12,25 +13,25 @@ public class Orador {
 	private String apellido;
 	private String mail;
 	private String tema;
-	private LocalDate fechaAlta;
+	private LocalDateTime fechaAlta;
 	
 	
-	public Orador(String nombre, String apellido, String mail, String tema, LocalDate fechaAlta) {
+	public Orador(String nombre, String apellido, String mail, String tema, LocalDateTime fechaAlta) {
 		init(nombre, apellido, mail, tema, fechaAlta);
 		
 	}
 
-	public Orador(Long id, String nombre, String apellido, String mail, String tema, LocalDate fechaAlta) {
+	public Orador(Long id, String nombre, String apellido, String mail, String tema, LocalDateTime fechaAlta2) {
 		this.id = id;
-		init(nombre, apellido, mail, tema, fechaAlta);
+		init(nombre, apellido, mail, tema, fechaAlta2);
 	}
 	
-	private void init(String nombre, String apellido, String mail, String tema, LocalDate fechaAlta) {
+	private void init(String nombre, String apellido, String mail, String tema, LocalDateTime fechaAlta2) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.mail = mail;
 		this.tema = tema;
-		this.fechaAlta = fechaAlta;
+		this.fechaAlta = fechaAlta2;
 	}
 
 	
@@ -79,11 +80,11 @@ public class Orador {
 		this.tema = tema;
 	}
 
-	public LocalDate getFechaAlta() {
+	public LocalDateTime getFechaAlta() {
 		return fechaAlta;
 	}
 
-	public void setFechaAlta(LocalDate fechaAlta) {
+	public void setFechaAlta(LocalDateTime fechaAlta) {
 		this.fechaAlta = fechaAlta;
 	}	
 	
